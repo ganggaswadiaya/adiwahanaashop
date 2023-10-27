@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+nav {
+    background-color: white;
+    backdrop-filter: blur(10);
+}
+.title {
+    font-size: 30px;
+    font-family: "Bodoni Moda";
+}
+span {
+    color: #AE6D13;
+}
+p {
+    font-family: "Quicksand";
+    color: #5E5E5E;
+}
+h2 {
+    font-size: 35px;
+}
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+#navbar {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    max-width: 1440px;
+    margin: auto;
+    transition: all 0.3s;
+}
+.nav-links {
+    width: 40%;
+}
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+}
+#navbar .logo a{
+    font-size: 26px;
+    font-family: "Bodoni Moda";
+    font-weight: 700;
+    color: black;
+}
+#navbar .logo span {
+    color: #AE6D13;
+}
+#navbar .nav-links a {
+    font-size: 18px;
+    color: black;
+    font-family: "Quicksand";
+    font-weight: 400;
+}
+#navbar .nav-links a:hover {
+    color: #E8B166;
+}
+#jumbotron {
+    scroll-margin-top: 120px;
+    max-width: 1440px;
+    margin: auto;
+}
+.contenJumbotron {
+    margin: 30px 100px;
+    margin-top: 100px;
+    background-image: url(../../image/jumbotron.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+#jumbotron h1 {
+    font-family: "Bodoni Moda";
+    color: white;
+    width: 70%;
+    margin: 10% 0;
+    font-size: 50px;
+    text-align: center;
+}
+/* #about {
+    max-width: 1440px;
+    margin: auto;
+} */
+#about .containerAbout {
+    padding: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1440px;
+    margin: auto;
+}
+#about .imgAbout img {
+   width: 550px;
+}
+.descAbout {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+.descAbout .descTitle p{
+    font-size: 20px;
+    color: #5E5E5E;
+    margin: 20px 0;
+}
+#about .descAbout .client {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.client h1 {
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+.client p {
+    margin-top: 5px;
+}
+.client .transaction {
+    padding-right: 20px;
+    border-right: 1px solid #8b8b8b;
+}
+.descAbout .btn {
+    margin-top: 20px;
+}
+.descAbout .btn a{
+    padding: 20px 70px;
+    background-color: #AE6D13;
+    color: white;
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.descAbout .btn a:hover {
+    background-color: #e8aa53;
+}
+#about .gallery {
+    background-color: #FFF9F0;
+}
+.containerGallery {
+    padding: 80px 100px;
+    max-width: 1440px;
+    margin: auto;
+}
+.gallery .title {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.title .textTitle {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.textTitle h1 {
+    margin-top: -30px;
+}
+.seeAll {
+    margin-top: -30px;
+}
+.seeAll a{
+    color: #5E5E5E;
+    text-decoration: underline;
+    font-size: 18px;
+    font-family: "Quicksand";
+}
+.contenGallery {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.order1, .order2 {
+    display: flex;
+    gap: 20px;
+}
+.order1 img:hover {
+    filter: brightness(50%);
+}
+.order2 img:hover {
+    filter: brightness(50%);
+}
+#product {
+    max-width: 1440px;
+    margin: auto;
+    padding: 80px 100px;
+}
+#product .title {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.descTitleProduct {
+    font-size: 20px;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 97px;
+}
+.product {
+    margin-top: 100px;
+    margin-left: -100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.product-right {
+    margin-top: 100px;
+    margin-right: -100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.product-right .descProduct {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.product .descProduct {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.descProduct p {
+    font-size: 20px;
+}
+.btn {
+    margin-top: 30px;
+}
+.btn a{
+    padding: 20px 70px;
+    background-color: #AE6D13;
+    color: white;
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btn a:hover {
+    background-color: #e8aa53;
+}
+#howItWork {
+    max-width: 1440px;
+    margin: auto;
+    padding: 80px 100px;
+}
+#howItWork .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenHowItWork {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px;
+}
+.card {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.card:hover {
+    opacity: 0.7;
+}
+.cardName h1 {
+    font-family: "Quicksand";
+    margin-top: 10px;
+}
+.cardDesc p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+#contact {
+    /* padding: 80px 100px; */
+    background-color: #FFF9F0;
+}
+.containerContact {
+    max-width: 1440px;
+    margin: auto;
+    padding: 80px 100px;
+}
+#contact .title {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.descTitleContact {
+    width: 60%;
+}
+.moreContact {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mediaSocial {
+    padding: 30px 50px;
+}
+.email img, .instagram img, .location img {
+    width: 30px;
+    margin: 15px;
+}
+.imgContact {
+    background-color: #FFF9F0;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.email a, .instagram a, .location a{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.email h3, .instagram h3, .location h3 {
+    font-family: "Quicksand";
+    color: black;
+    font-size: 15px;
+}
+
+.formContact {
+    padding: 30px 0;
+    padding-right: 100px;
+}
+.nameContact h3, .emailContact h3, .messageContact h3 {
+    font-family: "Quicksand";
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+textarea, input {
+    width: 400px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #FFF9F0;
+}
+textarea {
+    height: 120px;
+}
+input {
+    height: 30px;
+}
+.emailContact {
+    margin: 10px 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #8b8b8b;
+    transform: rotate(90deg);
+    width: 300px;
+    left: 450px;
+}
+.jarak {
+    padding: 5px;
+}
+input, textarea {
+    outline: none;
+}
+button {
+    margin-top: 20px;
+    border: 0;
+    background-color: #AE6D13;
+    padding: 10px 60px;
+    color: white;
+    font-family: "Quicksand";
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    background-color: #e8aa53;
+}
+footer {
+    background-color: #e8aa53;
+}
+.footer {
+    max-width: 1440px;
+    margin: auto;
+    height: 150px;
+}
+
+.active{
+    color: #e8aa53;
+    border-bottom: 1px solid #e8aa53;
+} 
