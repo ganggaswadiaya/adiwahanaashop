@@ -381,7 +381,7 @@ nav {
     font-size: 15px;
 }
 textarea, input {
-    width: 400px;
+    width: 50%;
     border-radius: 5px;
     border: 0;
     background-color: #FFF9F0;
@@ -437,8 +437,21 @@ footer {
     color: #e8aa53;
     border-bottom: 1px solid #e8aa53;
 } 
-
+@media screen and (max-width: 460px) {
+    textarea, input {
+        width: 300px;
+    }
+    button {
+        padding: 10px 90px;
+    }
+    .contenHowItWork {
+        padding: 0;
+    }
+}
 @media screen and (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+    }
     h2 {
         font-size: 25px;
     }
@@ -568,8 +581,10 @@ footer {
     .formContact {
         padding: 30px 30px;
     }
-    .btn a {
+    .descAbout .btn a {
         padding: 10px 50px;
     }
-    
+    .btn a {
+        padding: 10px 50px;
+    }   
 }
