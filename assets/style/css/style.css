@@ -381,7 +381,7 @@ nav {
     font-size: 15px;
 }
 textarea, input {
-    width: 50%;
+    width: 400px;
     border-radius: 5px;
     border: 0;
     background-color: #FFF9F0;
@@ -546,17 +546,18 @@ footer {
         gap: 10px;
     }
     .product-right {
-        margin: 0;
         margin: 50px 0;
         flex-direction: column;
+        text-align: end;
         gap: 10px;
     }
+    #product .product-right .imgProductRight{
+        margin-right: -30px;
+    }
     .imgProductRight img {
-        margin-left: 70px;
         width: 90%;
     }
     .product-right .descProduct {
-        text-align: end;
         order: 2;
         gap: 10px;
     }
@@ -590,4 +591,13 @@ footer {
     .btn a {
         padding: 10px 50px;
     }   
+    .mediaSocial {
+        padding: 30px 20px;
+    }
+    .cardImg img {
+        width: 50%;
+    }
+    .card {
+        padding: 0;
+    }
 }
