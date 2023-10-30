@@ -52,3 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", setActiveLink);
 });
 
+// Hamberger Menu 
+const humberger = document.querySelector('.hamberger');
+const navLink = document.querySelector('.nav-links');
+
+humberger.addEventListener('click', () => {
+  // Yang kita toggle bukan humberger, tapi navLink
+  // Karena navLink yang kita hide dan show
+  navLink.classList.toggle('active');
+});
