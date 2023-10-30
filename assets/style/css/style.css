@@ -447,6 +447,9 @@ footer {
     .contenHowItWork {
         padding: 0;
     }
+    .mediaSocial {
+        padding: 30px 30px;
+    }
 }
 @media screen and (max-width: 576px) {
     h1 {
@@ -549,7 +552,7 @@ footer {
         gap: 10px;
     }
     .imgProductRight img {
-        margin-left: 100px;
+        margin-left: 70px;
         width: 90%;
     }
     .product-right .descProduct {
