@@ -442,20 +442,6 @@ footer {
     color: #e8aa53;
     border-bottom: 1px solid #e8aa53;
 } 
-@media screen and (max-width: 460px) {
-    textarea, input {
-        width: 100%;
-    }
-    button {
-        padding: 10px 90px;
-    }
-    .contenHowItWork {
-        padding: 0;
-    }
-    .mediaSocial {
-        padding: 30px 30px;
-    }
-}
 @media screen and (max-width: 576px) {
     h1 {
         font-size: 30px;
@@ -617,5 +603,23 @@ footer {
     }
     .descImgContact {
         margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    textarea, input {
+        width: 100%;
+    }
+    button {
+        padding: 10px 90px;
+    }
+    .contenHowItWork {
+        padding: 0;
+    }
+    .mediaSocial {
+        padding: 30px 30px;
+    }
+    .slider img {
+        height: 100px;
     }
 }
