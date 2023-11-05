@@ -601,9 +601,6 @@ footer {
     .descImgContact {
         margin-top: -15px;
     }
-    .slider img {
-        height: 300px;
-    }
 }
 
 @media screen and (max-width: 460px) {
