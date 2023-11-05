@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll("nav ul li a");
 
     function setActiveLink() {
-        const fromTop = window.scrollY + window.innerHeight / 2;
+        const fromTop = window.scrollY + window.innerHeight / 3;
 
         navLinks.forEach((link) => {
             const section = document.querySelector(link.getAttribute("href"));
@@ -61,3 +61,26 @@ humberger.addEventListener('click', () => {
   // Karena navLink yang kita hide dan show
   navLink.classList.toggle('active');
 });
+
+
+// Slider 
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 2000); // Ganti gambar setiap 2 detik (sesuaikan dengan kebutuhan Anda).
+}
+
