@@ -434,7 +434,7 @@ footer {
   .slider img {
     width: 100%;
     object-fit: cover;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
   }
   
@@ -484,14 +484,11 @@ footer {
         height: 200px;
         margin: 70px 30px;
     }
-    .slider img {
-        height: 200px;
-    }
     #about .imgAbout img{
         width: 100%;
     }
     #about .containerAbout {
-        padding: 0 30px;
+        padding: 100px 30px;
         flex-direction: column;
     }
     .textTitle h1 {
@@ -604,6 +601,9 @@ footer {
     .descImgContact {
         margin-top: -15px;
     }
+    .slider img {
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -618,8 +618,5 @@ footer {
     }
     .mediaSocial {
         padding: 30px 30px;
-    }
-    .slider img {
-        height: 100px;
     }
 }
