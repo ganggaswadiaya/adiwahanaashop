@@ -57,11 +57,8 @@ const humberger = document.querySelector('.hamberger');
 const navLink = document.querySelector('.nav-links');
 
 humberger.addEventListener('click', () => {
-  // Yang kita toggle bukan humberger, tapi navLink
-  // Karena navLink yang kita hide dan show
   navLink.classList.toggle('active');
 });
-
 
 // Slider 
 let slideIndex = 0;
@@ -81,6 +78,17 @@ function showSlides() {
   }
 
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 2000); // Ganti gambar setiap 2 detik (sesuaikan dengan kebutuhan Anda).
+  setTimeout(showSlides, 2000);
 }
 
+// Jumbotron Scroll Command
+window.addEventListener('scroll', () => {
+    const scrollInstruction = document.querySelector('.scroll');
+    if (scrollInstruction) {
+        if (window.scrollY > 50) {
+            scrollInstruction.classList.add('hidden');
+        } else {
+            scrollInstruction.classList.remove('hidden');
+        }
+    }
+});

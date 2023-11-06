@@ -109,13 +109,33 @@ nav {
     margin: 30px 100px;
     margin-top: 100px;
 }
-#jumbotron h1 {
-    font-family: "Bodoni Moda";
-    color: white;
-    width: 70%;
-    padding: 100px 0;
-    font-size: 50px;
+.scroll {
     text-align: center;
+    position: fixed;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    transition: opacity 0.3s;
+    opacity: 1;
+    transition: all 0.3s;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+.scroll.hidden {
+    bottom: 35px;
+    opacity: 0;
+}
+.scroll img {
+    width: 70px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 70px;
 }
 #about .containerAbout {
     padding: 80px 100px;
@@ -428,12 +448,12 @@ footer {
     border-radius: 10px;
   }
   
-  .slide {
+.slide {
     display: inline-block;
     width: 100%;
     vertical-align: top;
   }  
-  .slider img {
+.slider img {
     width: 100%;
     object-fit: cover;
   }
@@ -474,6 +494,12 @@ footer {
     .contenJumbotron{
         height: 200px;
         margin: 70px 30px;
+    }
+    .scroll {
+        bottom: -20px;
+    }
+    .scroll img {
+        width: 35px;
     }
     #about .imgAbout img{
         width: 100%;
@@ -594,7 +620,7 @@ footer {
         margin-top: -15px;
     }
     .slider {
-        height: 250px;
+        height: 100vh;
     }
     p {
         font-size: 18px;
@@ -638,18 +664,6 @@ footer {
 }
 
 @media screen and (max-width: 460px) {
-    /* p {
-        font-size: 18px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    h1 {
-        font-size: 24px;
-    }
-    .textTitle h1 {
-        font-size: 24px;
-    } */
     textarea, input {
         width: 100%;
     }
@@ -668,28 +682,4 @@ footer {
     #about .containerAbout {
         margin-top: -60px;
     }
-    /* .cardDesc p {
-        font-size: 18px;
-    }
-    .cardName h1 {
-        font-size: 20px;
-    }
-    .descProduct p {
-        font-size: 18px;
-    }
-    .descAbout .descTitle p {
-        font-size: 18px;
-    }
-    .client h1 {
-        font-size: 20px;
-    }
-    .client p {
-        font-size: 18px;
-    }
-    .descAbout .btn a {
-        font-size: 15px;
-    }
-    .btn a {
-        font-size: 15px;
-    } */
 }
