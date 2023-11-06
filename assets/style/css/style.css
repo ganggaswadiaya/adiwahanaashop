@@ -498,6 +498,7 @@ footer {
     }
     .contenJumbotron{
         margin: 70px 30px;
+        margin-top: 250px;
     }
     .scroll {
         bottom: 0;
@@ -660,6 +661,9 @@ footer {
         font-size: 15px;
     }
     .btn a {
+        font-size: 15px;
+    }
+    button {
         font-size: 15px;
     }
 }
