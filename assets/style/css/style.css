@@ -496,7 +496,7 @@ footer {
         margin: 70px 30px;
     }
     .scroll {
-        bottom: -1100px;
+        bottom: -900px;
     }
     .scroll img {
         width: 35px;
@@ -505,7 +505,7 @@ footer {
         width: 100%;
     }
     #about .containerAbout {
-        margin-top: 1500px;
+        margin-top: 1200px;
         padding: 30px 30px;
         flex-direction: column;
     }
