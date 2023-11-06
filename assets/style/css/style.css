@@ -422,8 +422,10 @@ footer {
 }
 .slider {
     width: 100%;
+    height: 450px;
     overflow: hidden;
     white-space: nowrap;
+    border-radius: 10px;
   }
   
   .slide {
@@ -434,8 +436,6 @@ footer {
   .slider img {
     width: 100%;
     object-fit: cover;
-    height: 450px;
-    border-radius: 10px;
   }
   
 .active{
@@ -443,15 +443,6 @@ footer {
     border-bottom: 1px solid #e8aa53;
 } 
 @media screen and (max-width: 576px) {
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 25px;
-    }
-    p {
-        font-size: 18px;
-    }
     #navbar {
         height: 50px;
         width: 100%;
@@ -488,7 +479,8 @@ footer {
         width: 100%;
     }
     #about .containerAbout {
-        padding: 100px 30px;
+        margin-top: -50px;
+        padding: 30px 30px;
         flex-direction: column;
     }
     .textTitle h1 {
@@ -582,7 +574,7 @@ footer {
         padding: 30px 20px;
     }
     .cardImg img {
-        width: 50%;
+        width: 100px;
     }
     .card {
         padding: 0;
@@ -601,9 +593,63 @@ footer {
     .descImgContact {
         margin-top: -15px;
     }
+    .slider {
+        height: 250px;
+    }
+    p {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .textTitle h1 {
+        font-size: 24px;
+    }
+    .cardDesc p {
+        font-size: 18px;
+    }
+    .cardName h1 {
+        font-size: 20px;
+    }
+    .descProduct p {
+        font-size: 18px;
+    }
+    .descAbout .descTitle p {
+        font-size: 18px;
+    }
+    .client h1 {
+        font-size: 20px;
+    }
+    .client p {
+        font-size: 18px;
+    }
+    .descAbout .btn a {
+        font-size: 15px;
+    }
+    .btn a {
+        font-size: 15px;
+    }
+    #about .containerAbout {
+        margin-top: -10px;
+    }
 }
 
 @media screen and (max-width: 460px) {
+    /* p {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .textTitle h1 {
+        font-size: 24px;
+    } */
     textarea, input {
         width: 100%;
     }
@@ -616,4 +662,34 @@ footer {
     .mediaSocial {
         padding: 30px 30px;
     }
+    .slider {
+        height: 200px;
+    }
+    #about .containerAbout {
+        margin-top: -60px;
+    }
+    /* .cardDesc p {
+        font-size: 18px;
+    }
+    .cardName h1 {
+        font-size: 20px;
+    }
+    .descProduct p {
+        font-size: 18px;
+    }
+    .descAbout .descTitle p {
+        font-size: 18px;
+    }
+    .client h1 {
+        font-size: 20px;
+    }
+    .client p {
+        font-size: 18px;
+    }
+    .descAbout .btn a {
+        font-size: 15px;
+    }
+    .btn a {
+        font-size: 15px;
+    } */
 }
