@@ -443,6 +443,7 @@ footer {
 }
 .slider {
     width: 100%;
+    height: 100vh;
     overflow: hidden;
     white-space: nowrap;
     border-radius: 10px;
@@ -494,17 +495,23 @@ footer {
         height: 200px;
         margin: 70px 30px;
     }
+    .slider img{
+        height: 800px;
+    }
+    .slider {
+        border-radius: 10px;
+    }
     .scroll {
-        bottom: -100px;
+        bottom: -400px;
     }
     .scroll img {
-        width: 35px;
+        width: 50px;
     }
     #about .imgAbout img{
         width: 100%;
     }
     #about .containerAbout {
-        margin-top: 200px;
+        margin-top: 700px;
         padding: 30px 30px;
         flex-direction: column;
     }
@@ -670,6 +677,6 @@ footer {
         padding: 30px 30px;
     }
     #about .containerAbout {
-        margin-top: 10px;
+        margin-top: 700px;
     }
 }
