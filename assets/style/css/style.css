@@ -496,7 +496,7 @@ footer {
         margin: 70px 30px;
     }
     .scroll {
-        bottom: -200px;
+        bottom: -600px;
     }
     .scroll img {
         width: 35px;
@@ -656,7 +656,7 @@ footer {
         font-size: 15px;
     }
     #about .containerAbout {
-        margin-top: 270px;
+        margin-top: 800px;
     }
     .slider {
         height: 100vh;
