@@ -78,14 +78,14 @@ function showSlides() {
   }
 
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 2000);
+  setTimeout(showSlides, 3000);
 }
 
 // Jumbotron Scroll Command
 window.addEventListener('scroll', () => {
     const scrollInstruction = document.querySelector('.scroll');
     if (scrollInstruction) {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 400) {
             scrollInstruction.classList.add('hidden');
         } else {
             scrollInstruction.classList.remove('hidden');
