@@ -112,7 +112,7 @@ nav {
 .scroll {
     text-align: center;
     position: fixed;
-    bottom: -35px;
+    bottom: 60px;
     left: 0;
     right: 0;
     transition: opacity 0.3s;
@@ -442,7 +442,7 @@ footer {
 }
 .slider {
     width: 100%;
-    height: 450px;
+    height: 100vh;
     overflow: hidden;
     white-space: nowrap;
     border-radius: 10px;
@@ -496,7 +496,7 @@ footer {
         margin: 70px 30px;
     }
     .scroll {
-        bottom: -20px;
+        bottom: -200px;
     }
     .scroll img {
         width: 35px;
@@ -619,9 +619,6 @@ footer {
     .descImgContact {
         margin-top: -15px;
     }
-    .slider img{
-        height: 100vh;
-    }
     p {
         font-size: 18px;
     }
@@ -659,7 +656,14 @@ footer {
         font-size: 15px;
     }
     #about .containerAbout {
-        margin-top: -10px;
+        margin-top: 270px;
+    }
+    .slider {
+        height: 100vh;
+    }
+    .slider img{
+        height: 100vh;
+        object-position: center;
     }
 }
 
@@ -677,9 +681,13 @@ footer {
         padding: 30px 30px;
     }
     .slider {
-        height: 200px;
+        height: 100vh;
     }
     #about .containerAbout {
-        margin-top: -60px;
+        margin-top: 270px;
+    }
+    .slider img{
+        height: 100vh;
+        object-position: center;
     }
 }
