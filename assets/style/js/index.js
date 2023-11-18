@@ -92,3 +92,8 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+// Next Section
+document.getElementsByClassName('scrollBtn').addEventListener('click', function() {
+    scrollToNextSection();
+});
