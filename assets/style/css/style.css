@@ -34,16 +34,6 @@ p {
 h2 {
     font-size: 35px;
 }
-.fade-in-element {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.fade-in-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 nav {
     background-color: white;
     position: fixed;
@@ -71,7 +61,7 @@ nav {
     justify-content: space-between;
 }
 #navbar .logo a{
-    font-size: 26px;
+    font-size: 30px;
     font-family: "Bodoni Moda";
     font-weight: 700;
     color: black;
@@ -98,48 +88,36 @@ nav {
 .hamberger .menu {
     width: 30px;
     height: 3px;
-    background-color: #5E5E5E;
+    background-color: #AE6D13;
     border-radius: 10px;
     margin: 5px;
+}
+.hamberger .menu:hover {
+    background-color: #E8B166;
 }
 #jumbotron {
     scroll-margin-top: 120px;
     max-width: 1440px;
     margin: auto;
+    padding: 120px 100px;
+    padding-bottom: 20px;
 }
 .contenJumbotron {
-    overflow-y: hidden;
-    margin: 30px 100px;
-    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
 }
-.scroll {
-    text-align: center;
-    position: fixed;
-    bottom: 200px;
-    left: 0;
-    right: 0;
-    transition: opacity 0.8s;
-    opacity: 1;
-    transition: all 0.3s;
-    animation: bounce 2s infinite;
-    z-index: 3;
+.imgjumbotron img {
+    width: 550px;
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-30px);
-    }
+.descJumbotron .descTitle p {
+    font-size: 20px;
+    color: #5E5E5E;
+    margin: 20px 0;
 }
-.scroll.hidden {
-    bottom: 35px;
-    opacity: 0;
-}
-.scroll img {
-    width: 70px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 70px;
+.descJumbotron .btn {
+    margin-top: 50px;
 }
 #about .containerAbout {
     padding: 80px 100px;
@@ -151,10 +129,8 @@ nav {
     margin: auto;
 }
 #about .imgAbout img {
-   width: 550px;
-}
-#about .imgAbout {
-    order: 2;
+    margin-left: -100px;
+    width: 550px;
 }
 .descAbout {
     display: flex;
@@ -236,6 +212,9 @@ nav {
     align-items: center;
     gap: 20px;
 }
+.contenGallery img {
+    border-radius: 10px;
+}
 .order1, .order2 {
     display: flex;
     gap: 20px;
@@ -275,6 +254,14 @@ nav {
     display: flex;
     gap: 50px;
     align-items: center;
+}
+.product .imgProduct img{
+    width: 675px;
+    border-radius: 0 20px 20px 0;
+}
+.product-right .imgProductRight img{
+    width: 675px;
+    border-radius: 20px 0 0 20px;
 }
 .product-right .descProduct {
     display: flex;
@@ -328,6 +315,9 @@ nav {
 }
 .card:hover {
     opacity: 0.7;
+}
+.cardImg img {
+    width: 150px;
 }
 .cardName h1 {
     font-family: "Quicksand";
@@ -463,13 +453,9 @@ footer {
 .slider img {
     width: 100%;
     object-fit: cover;
-}
-#hidden-content {
-    display: none;
-}  
+} 
 .active{
     color: #e8aa53;
-    border-bottom: 1px solid #e8aa53;
 } 
 @media screen and (max-width: 576px) {
     #navbar {
@@ -482,8 +468,7 @@ footer {
         top: 50px;
         right: -100%;
         width: 100%;
-        background: transparent;
-        backdrop-filter: blur(50px);
+        background-color: white;
         margin-left: -30px;
         padding: 30px 0;
         transition: all 0.8s;
@@ -496,20 +481,33 @@ footer {
     #navbar .hamberger {
         display: block;
     }
+    #navbar .logo a {
+        font-size: 20px;
+    }
     .nav-links.active {
         right: 0;
     }
+    #jumbotron {
+        padding: 80px 30px;
+        padding-bottom: 50px;
+    }
     .contenJumbotron{
-        margin: 250px 30px;
+        flex-direction: column;
+        gap: 30px;
     }
-    .scroll {
-        bottom: 10px;
+    .descJumbotron .descTitle p {
+        font-size: 18px;
     }
-    .scroll img {
-        width: 35px;
+    .descJumbotron {
+        order: 2;
+    }
+    .imgjumbotron img {
+        order: 1;
+        width: 100%;
     }
     #about .imgAbout img{
         width: 100%;
+        margin-left: -30px;
     }
     .descAbout {
         margin-top: 10px;
@@ -539,6 +537,12 @@ footer {
         margin: 50px 0;
         padding: 0;
         padding: 40px 30px;
+    }
+    .product .imgProduct img {
+        width: 90%;
+    }
+    .product-right .imgProductRight img {
+        width: 80%;
     }
     #product .product-right .title {
         justify-content: flex-end;
@@ -589,7 +593,7 @@ footer {
         align-items: center;
     }
     .imgContactTitle img {
-        width: 100px;
+        width: 80px;
     }
     .moreContact {
         flex-direction: column;
