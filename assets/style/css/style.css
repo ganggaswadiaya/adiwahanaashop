@@ -466,7 +466,38 @@ footer {
     width: 250px;
     height: 250px;
     object-fit: cover;
-  }
+}
+
+@media screen and (max-width: 1200px) {
+    .imgjumbotron img {
+        width: 100%;
+    }
+    .product .imgProduct img {
+        width: 100%;
+    }
+    .product-right .imgProductRight img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .contenHowItWork {
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .nav-links {
+        width: 50%;
+    }
+    textarea, input {
+        width: 300px;
+    }
+    .contenGallery {
+        overflow: hidden;
+    }
+    .imgMoreProduct img {
+        object-fit: contain;
+      }
+}
 
 
 /* Tablet Resnponsive */
@@ -564,6 +595,21 @@ footer {
     }
     #navbar .logo a {
         font-size: 20px;
+    }
+    .containerGallery {
+        padding: 80px 60px
+    }
+    #product {
+        padding: 80px 60px
+    }
+    #howItWork {
+        padding: 80px 60px
+    }
+    .containerContact {
+        padding: 80px 60px
+    }
+    .mediaSocial {
+        padding: 30px 0;
     }
 }
 
@@ -809,5 +855,10 @@ footer {
     }
     .mediaSocial {
         padding: 30px 30px;
+    }
+    .imgMoreProduct img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
     }
 }
