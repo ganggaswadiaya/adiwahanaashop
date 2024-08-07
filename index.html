@@ -122,7 +122,7 @@
                             <h1>Explore Our<br>Products</h1>
                         </div>
                         <div class="seeAll">
-                            <a href="">See All</a>
+                            <a href="https://www.instagram.com/gwp.souvenir?igsh=MThmeTJnZzA2djQ2aA==">See All</a>
                         </div>
                     </div>
                     <div class="descTitleProduct">
@@ -241,7 +241,7 @@
                 <div class="moreContact ">
                     <div class="mediaSocial">
                         <div class="email ">
-                            <a href="">
+                            <a href="adiwahanashopcs@gmail.com">
                                 <div class="imgContact">
                                     <img src="assets/image/mail.webp" alt="email icon">
                                 </div>
@@ -252,7 +252,7 @@
                             </a>
                         </div>
                         <div class="instagram ">
-                            <a href="">
+                            <a href="https://www.instagram.com/gwp.souvenir?igsh=MThmeTJnZzA2djQ2aA==">
                                 <div class="imgContact">
                                     <img src="assets/image/instagram.webp" alt="instagram icon">
                                 </div>
@@ -275,23 +275,25 @@
                         </div>
                     </div>
                     <hr>
+                    <form onsubmit="sendMessage()">
                     <div class="formContact">
                         <div class="nameContact ">
-                            <h3>Your Name</h3>
-                            <input type="text" class="jarak">
+                            <label for="name">Your Name</label>
+                            <input required type="text" id="name" class="jarak">
                         </div>
                         <div class="emailContact ">
-                            <h3>Your Email</h3>
-                            <input type="email" class="jarak">
+                            <label for="email">Email Address</label>
+                            <input required type="email" id="email" class="jarak">
                         </div>
                         <div class="messageContact ">
-                            <h3>Your Message</h3>
-                            <textarea name="" id="" class="jarak"></textarea>
+                            <label for="message">Your Message</label>
+                            <textarea required id="message" class="jarak"></textarea>
                         </div>
-                        <button>
+                        <button type="submit">
                             Send Message
                         </button>
                     </div>
+                    </form>
                 </div>
             </div>
         </section>
